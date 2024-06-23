@@ -3,7 +3,7 @@ import axios from 'axios';
 
 @Injectable()
 export class TranslationService {
-  private readonly LIBRETRANSLATE_API_URL = 'http://localhost:5000/translate';
+  private readonly LIBRETRANSLATE_API_URL = 'http://localhost:8080/translate';
 
   async translateText(text: string, targetLanguage: string) {
     try {
