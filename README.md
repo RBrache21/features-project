@@ -25,7 +25,7 @@ This project is a full-stack application that allows users to explore Wikipedia'
 
 ## Installation
 1. Clone the repository
-2. Navigate to wiki-front `cd wiki-front` and run `npm install`. Also create a .env and add this: REACT_APP_API_URL=http://localhost:8080
+2. Navigate to wiki-front `cd wiki-front` and run `npm install`. Also create a .env and add this: REACT_APP_API_URL=http://localhost:3001
 4. Navigate to wiki-api `cd wiki-api` and run `npm install`
 
 ## Running the application
