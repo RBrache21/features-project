@@ -1,6 +1,6 @@
 # Wikipedia Featured Content Project
 
-This project is a full-stack application that allows users to explore Wikipedia's featured content based on selected dates and languages. The application consists of a ReactJS frontend and a NestJS backend, containerized using Docker and Docker Compose for easy deployment. Additionally, the project supports mobile deployment using Capacitor and includes both unit and end-to-end testing.
+This project is a full-stack application that allows users to explore Wikipedia's featured content based on selected dates and languages. The application consists of a ReactJS frontend and a NestJS backend, containerized using Docker and Docker Compose. Additionally, the project supports mobile deployment using Capacitor and includes both unit and end-to-end testing.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
@@ -43,7 +43,7 @@ This project is a full-stack application that allows users to explore Wikipedia'
 ### Running Backend Separstely
 - Navigate to wiki-api `cd wiki-api`
 - Run `npm install` if not done previously
-- run `npm run start:dev`
+- Run `npm run start:dev`
   
 ## Mobile Deployment
 ### IOS
