@@ -38,8 +38,6 @@ This project is a full-stack application that allows users to explore Wikipedia'
 - Run `npm install` if not done previously
 - Run `npm start`
 
-*NOTE: For the frontend to work without the backend, go to the services folder and modify index.tsx and wikipediaAPI.ts. In both you have options to comment out with backend ot without backend.
-
 ### Running Backend Separstely
 - Navigate to wiki-api `cd wiki-api`
 - Run `npm install` if not done previously
@@ -66,6 +64,7 @@ This project is a full-stack application that allows users to explore Wikipedia'
 ## Important Notes:
 - To test the infinite scroll feature, select "Most read", hit the enable infinite scroll button and look for a date with enough content (June 21 2024 is an option).
 - The wikipedia api has more languages available but we pick just the four with the most content.
+- For the frontend to work without the backend, go to the services folder and modify index.tsx and wikipediaAPI.ts. In both you have options to comment out options with backend or without backend.
 
 
 
