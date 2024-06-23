@@ -3,12 +3,8 @@
 This project is a full-stack application that allows users to explore Wikipedia's featured content based on selected dates and languages. The application consists of a ReactJS frontend and a NestJS backend, containerized using Docker and Docker Compose for easy deployment. Additionally, the project supports mobile deployment using Capacitor and includes both unit and end-to-end testing.
 
 ## Table of Contents
-
-- [Project Structure](#project-structure)
-- [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
 - [Running the Application](#running-the-application)
   - [Running with Docker Compose](#running-with-docker-compose)
   - [Running Frontend Separately](#running-frontend-separately)
@@ -17,10 +13,59 @@ This project is a full-stack application that allows users to explore Wikipedia'
   - [iOS Setup](#ios-setup)
   - [Android Setup](#android-setup)
 - [Testing](#testing)
-  - [Unit Testing with Jest](#unit-testing-with-jest)
   - [End-to-End Testing with Cypress](#end-to-end-testing-with-cypress)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
+- [Important Notes](#important-notes)
 
-## Project Structure
+## Prerequisites
+- Nodejs
+- Docker
+- Git
+- Xcode: For IOS
+- Andriod Studio: For Android
+
+## Installation
+1. Clone the repository
+2. Navigate to wiki-front `cd wiki-front` and run `npm install`. Also create a .env and add this: REACT_APP_API_URL=http://localhost:8080
+4. Navigate to wiki-api `cd wiki-api` and run `npm install`
+
+## Running the application
+### Running with Docker
+- Navigate to the root directory features-project
+- Run `docker-compose up --build`
+
+### Running Frontend Separately
+- Navigate to wiki-front `cd wiki-front`
+- Run `npm install` if not done previously
+- Run `npm start`
+
+*NOTE: For the frontend to work without the backend, go to the services folder and modify index.tsx and wikipediaAPI.ts. In both you have options to comment out with backend ot without backend.
+
+### Running Backend Separstely
+- Navigate to wiki-api `cd wiki-api`
+- Run `npm install` if not done previously
+- run `npm run start:dev`
+  
+## Mobile Deployment
+### IOS
+- Navigate to wiki-front `cd wiki-front`
+- Run `npx cap add ios`
+- Run npx cap open ios`
+- Agree to the xcode license: `sudo xcodebuild -license`
+### Android
+- Navigate to wiki-front `cd wiki-front`
+- Run `npx cap add andriod`
+- Run npx cap open android`
+- Select Device
+- Click run
+
+## Testing
+### E2E Testing
+- Navigate to wiki-front `cd wiki front`
+- Either run `npm run cy:open` to open the cypress GUI or run `npx cypress run`
+
+# Important Notes:
+- To test the infinite scroll feature, select "Most read", hit the enable infinite scroll button and look for a date with enough content (June 21 2024 is an option).
+- The wikipedia api has more languages available but we pick just the four with the most content.
+
+
 
