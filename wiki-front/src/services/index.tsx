@@ -16,14 +16,14 @@ const Services = () => {
     setIsLoading(true);
     try {
       // without backend
-      const response = await wikipediaAPI.get<WikiFeturedContent>(
-        `${language}/featured/${formattedDate}`
-      );
+      // const response = await wikipediaAPI.get<WikiFeturedContent>(
+      //   `${language}/featured/${formattedDate}`
+      // );
 
       // with backend
-      // const response = await wikipediaAPI.get<WikiFeturedContent>(`/feed`, {
-      //   params: { date: formattedDate, language },
-      // });
+      const response = await wikipediaAPI.get<WikiFeturedContent>(`/feed`, {
+        params: { date: formattedDate, language },
+      });
 
       return response.data;
     } catch (error: any) {
