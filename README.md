@@ -63,7 +63,7 @@ This project is a full-stack application that allows users to explore Wikipedia'
 - Navigate to wiki-front `cd wiki front`
 - Either run `npm run cy:open` to open the cypress GUI or run `npx cypress run`
 
-# Important Notes:
+## Important Notes:
 - To test the infinite scroll feature, select "Most read", hit the enable infinite scroll button and look for a date with enough content (June 21 2024 is an option).
 - The wikipedia api has more languages available but we pick just the four with the most content.
 
